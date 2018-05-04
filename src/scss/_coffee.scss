@@ -4,16 +4,100 @@ body{
     
 
 }
+/* NAVIGATION ----------------------------------------------------------*/
+.header-container {
+    border-bottom: 1px solid #F2F2F2;
+    padding: 1em 0;
+    background-color: lightgray; 
+   }
+   .header-content{
+    display: flex;
+    flex-wrap: wrap;
+
+   }
+   
+   .logo {
+    margin: auto;
+   }
+   
+   .logo img {
+    display: block;
+   
+   }
+   
+   nav {
+    margin: auto;
+   }
+   
+   header ul li {
+    display: inline-block;
+    padding: 0 1.4em 0 0;
+    font-size: 0.9em;
+   }
+   
+   header ul li a {
+    text-decoration: none;
+    color: #7D7C7D;
+   }
+   
+   li a.active {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    font-weight: 300;
+   }
+   
+   li a:hover {
+    color: #B6B6B6;
+   }
+
+   .hero-image{
+    
+   }
+
+   @media screen and (min-width : 600px) {
+    .header-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+   
+   .logo {
+      margin-left: 2.3em;
+    }
+   
+    nav {
+      align-self: center;
+      margin: 0 0.8em 0 0;
+    }
+   }
 
 
 
-.coffe_typ img {
-    width: 100%;
+/* FOOTER ----------------------------------------------------------*/
+
+.footer_container {
+    display: flex;
+    justify-content: center;
+    height: 180px;
 
 }
 
-.coffe_typ {
-    background-color: grey;
-    color:rgb(83, 77, 77);
+.footer_container ul {
+    margin: 30px;
 }
 
+.footer_container ul li {
+    display: inline;
+    margin: 25px;
+    
+    
+}
+
+.hypster {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.insta {
+    text-align: center;
+}
