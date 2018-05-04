@@ -1,16 +1,12 @@
-$white_color: white;
-
-body{
-    
-    background-color: $white_color;
-}
-
 .header-container {
-    display: flex;
-    flex-direction: column;
     border-bottom: 1px solid #F2F2F2;
     padding: 1em 0;
-    background-color: lightgray;
+    background-color: lightgray; 
+   }
+   .header-content{
+    display: flex;
+    flex-wrap: wrap;
+
    }
    
    .logo {
@@ -19,10 +15,11 @@ body{
    
    .logo img {
     display: block;
+   
    }
    
    nav {
-    margin: auto;;
+    margin: auto;
    }
    
    header ul li {
@@ -45,6 +42,11 @@ body{
    li a:hover {
     color: #B6B6B6;
    }
+
+   .hero-image{
+    
+   }
+
    @media screen and (min-width : 600px) {
     .header-container {
       flex-direction: row;
@@ -60,3 +62,5 @@ body{
       margin: 0 0.8em 0 0;
     }
    }
+
+  
